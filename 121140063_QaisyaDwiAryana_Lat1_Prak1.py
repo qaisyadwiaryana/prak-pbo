@@ -1,0 +1,8 @@
+# Qaisya Dwi Aryana 121140063 Siakad RB
+
+N = int(input("Masukkan nilai: "))
+
+for i in range (n):
+    for j in range (n):
+        print("*", end="")
+    print("")

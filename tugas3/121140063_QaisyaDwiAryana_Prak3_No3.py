@@ -18,16 +18,16 @@ class Data:
         Data.count += 1
         
     # untuk mengakses dan mengubah nilai atribut private
-    def akses_no_hp(self):
+    def get_no_hp(self):
         return self.__no_hp
 
-    def ubah_no_hp(self, no_hp: str):
+    def set_no_hp(self, no_hp: str):
         self.__no_hp = no_hp
 
-    def akses_alamat(self):
+    def get_alamat(self):
         return self.__alamat
 
-    def ubah_alamat(self, alamat: str):
+    def set_alamat(self, alamat: str):
         self.__alamat = alamat
     
     # untuk mengakses atribut protected
@@ -51,7 +51,7 @@ class Karyawan(Data):
 
     @property
     def no_hp(self):
-        return self.akses_no_hp()
+        return self.get_no_hp()
 
     @no_hp.setter
     def no_hp(self, no_hp: str):
@@ -145,8 +145,8 @@ def main():
 
     # percobaan mengakses atribut private dengan aksester
     print("Akses atribut private dengan aksester")
-    print("Nomor telepon: %s" % data.akses_no_hp())
-    print("Nomor telepon: %s" % karyawan.akses_no_hp())
+    print("Nomor telepon: %s" % data.get_no_hp())
+    print("Nomor telepon: %s" % karyawan.get_no_hp())
 
     # newline
     print()
